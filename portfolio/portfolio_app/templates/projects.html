@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/">About</a>
+        <a href="/projects/">Projects</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+    {% block content %}{% endblock %}
+</header>
+
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="project-card">
+            <h3 class="project-title">Spellchecker Implementation</h3>
+            <p class="project-description"><strong>Description:</strong> Developed a spellchecker using a hashtable and the Wagner-Fischer algorithm.</p>
+            <p class="project-description"><strong>Technologies Used:</strong> Python, Data Structures, Algorithms.</p>
+            <p class="project-description"><strong>Outcome:</strong> Created an application that efficiently detects and corrects spelling errors.</p>
+        </div>
+        <div class="project-card">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description"><strong>Description:</strong> Designed a responsive Django-based portfolio to showcase my skills and projects.</p>
+            <p class="project-description"><strong>Technologies Used:</strong> Django, HTML, CSS, JavaScript.</p>
+            <p class="project-description"><strong>Outcome:</strong> Improved my web development and design capabilities.</p>
+        </div>
+        <div class="project-card">
+            <h3 class="project-title">Scheduling Algorithms</h3>
+            <p class="project-description"><strong>Description:</strong> Implemented FCFS, Round Robin, and SJF algorithms to optimize task scheduling.</p>
+            <p class="project-description"><strong>Technologies Used:</strong> Python, Algorithms.</p>
+            <p class="project-description"><strong>Outcome:</strong> Enhanced understanding of optimization techniques in system performance.</p>
+        </div>
+        <div class="project-card">
+            <h3 class="project-title">ERP System Testing</h3>
+            <p class="project-description"><strong>Description:</strong> Tested ERP systems to evaluate performance and user experience.</p>
+            <p class="project-description"><strong>Technologies Used:</strong> Software Testing Tools, System Design.</p>
+            <p class="project-description"><strong>Outcome:</strong> Improved reliability and usability of ERP software.</p>
+        </div>
+    </div>
+<div class="footer" style="background-color: black; padding-bottom: 12px">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 style="color: white">Follow me:</h4>
+                <a href="https://github.com/Habiba-halkano">Github</a>
+                <a href="https://www.linkedin.com/in/habiba-halkano">LinkedIn</a>
+                <a href="https://x.com/Habzhalka">Twitter</a>
+                <a href="https://www.facebook.com/habiba-halkano.988">Facebook</a>
+                <a href="https://instagram.com/_h.halka._">Instagram</a>
+            </div>
+            <div class="col-md-6" style="color: white">
+                <p></p>
+                <p>© 2024 Habiba Halkano. All rights reserved.</p>
+            </div>
+        </div>
+</body>
+</html>
